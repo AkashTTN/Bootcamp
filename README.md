@@ -52,7 +52,7 @@ The margin area, bounded by the margin edge, extends the border area to include 
 
 **8. What are the different types of CSS Selectors ?**  
 CSS selectors define the elements to which a set of CSS rules apply.
-### Basic selectors
+**Basic selectors**
 Universal selector
 Selects all elements. Optionally, it may be restricted to a specific namespace or to all namespaces.
 Example: * will match all the elements of the document.
@@ -72,13 +72,13 @@ Attribute selector
 Selects all elements that have the given attribute.
 Syntax: [attr] [attr=value] 
 
-Grouping selectors
+**Grouping selectors**
 Selector list
 The , is a grouping method, it selects all the matching nodes.
 Syntax: A, B
 Example: div, span will match both span and div elements.
 
-Combinators
+**Combinators**
 Descendant combinator
 The   (space) combinator selects nodes that are descendants of the first element.
 Syntax: A B
@@ -88,7 +88,7 @@ The > combinator selects nodes that are direct children of the first element.
 Syntax: A > B
 Example: ul > li will match all li elements that are nested directly inside a ul element.
 
-Pseudo
+**Pseudo**
 Pseudo classes
 The : pseudo allow the selection of elements based on state information that is not contained in the document tree.
 Example: a:visited will match all a elements that have been visited by the user.
