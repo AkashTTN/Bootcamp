@@ -53,48 +53,48 @@ The margin area, bounded by the margin edge, extends the border area to include 
 **8. What are the different types of CSS Selectors ?**  
 CSS selectors define the elements to which a set of CSS rules apply.
 **Basic selectors**
-Universal selector
-Selects all elements. Optionally, it may be restricted to a specific namespace or to all namespaces.
-Example: * will match all the elements of the document.
-Type selector
-Selects all elements that have the given node name.
-Syntax: elementname
-Example: input will match any input element.
-Class selector
-Selects all elements that have the given class attribute.
-Syntax: .classname
-Example: .index will match any element that has a class of "index".
-ID selector
-Selects an element based on the value of its id attribute. There should be only one element with a given ID in a document.
-Syntax: #idname
-Example: #rollno will match the element that has the ID "rollno".
-Attribute selector
-Selects all elements that have the given attribute.
-Syntax: [attr] [attr=value] 
+Universal selector  
+Selects all elements. Optionally, it may be restricted to a specific namespace or to all namespaces.  
+Example: * will match all the elements of the document.  
+Type selector  
+Selects all elements that have the given node name.  
+Syntax: elementname  
+Example: input will match any input element.  
+Class selector  
+Selects all elements that have the given class attribute.  
+Syntax: .classname  
+Example: .index will match any element that has a class of "index".  
+ID selector  
+Selects an element based on the value of its id attribute. There should be only one element with a given ID in a document.  
+Syntax: #idname  
+Example: #rollno will match the element that has the ID "rollno".  
+Attribute selector  
+Selects all elements that have the given attribute.  
+Syntax: [attr] [attr=value]   
 
-**Grouping selectors**
-Selector list
-The , is a grouping method, it selects all the matching nodes.
-Syntax: A, B
-Example: div, span will match both span and div elements.
+**Grouping selectors**  
+Selector list  
+The , is a grouping method, it selects all the matching nodes.  
+Syntax: A, B  
+Example: div, span will match both span and div elements.  
 
-**Combinators**
-Descendant combinator
-The   (space) combinator selects nodes that are descendants of the first element.
-Syntax: A B
-Example: div span will match all span elements that are inside a div element.
-Child combinator
-The > combinator selects nodes that are direct children of the first element.
-Syntax: A > B
-Example: ul > li will match all li elements that are nested directly inside a ul element.
+**Combinators**  
+Descendant combinator  
+The   (space) combinator selects nodes that are descendants of the first element.  
+Syntax: A B  
+Example: div span will match all span elements that are inside a div element.  
+Child combinator  
+The > combinator selects nodes that are direct children of the first element.  
+Syntax: A > B  
+Example: ul > li will match all li elements that are nested directly inside a ul element.  
 
 **Pseudo**
-Pseudo classes
-The : pseudo allow the selection of elements based on state information that is not contained in the document tree.
-Example: a:visited will match all a elements that have been visited by the user.
-Pseudo elements
-The :: pseudo represent entities that are not included in HTML.
-Example: p::first-line will match the first line of all p elements.
+Pseudo classes  
+The : pseudo allow the selection of elements based on state information that is not contained in the document tree.  
+Example: a:visited will match all a elements that have been visited by the user.  
+Pseudo elements  
+The :: pseudo represent entities that are not included in HTML.  
+Example: p::first-line will match the first line of all p elements.  
 
 **9. Define Doctype.**     
 The (<!DOCTYPE html>) declaration is used to inform a website visitor's browser that the document being rendered is an HTML document. While not actually an HTML element itself, every HTML document should begin with a DOCTYPE declaration to be compliant with HTML standards. It lets the browser know how the document should be interpreted, by indicating what version or standard of HTML (or other markup language) is being used.
