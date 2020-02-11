@@ -1,0 +1,22 @@
+body {
+    background-color: blanchedalmond;
+    font-family: Roboto;
+}
+
+table {
+    width: 100%;
+    background-color: lightgray;
+    border: 3px solid black;
+    border-collapse: collapse;
+    border-spacing: 5px;
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+}
+
+td:hover {
+    font-size: larger;
+    transition: all 0.3s;
+}

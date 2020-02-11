@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/question12.css"> 
+    <title>Question 12</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>TO THE NEW</h1>
+            <div class="nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li></li><a href="#">Quick Help</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="form">
+            <div class="form-header">
+                <h2>Bug Report</h1>
+            </div>
+            <form class="form-body" method="POST" action="#">
+                <label>
+                    Title*
+                    <input type="text" required>
+                </label>
+                <label for="description">
+                    Description*
+                    <br>
+                    <textarea id="description" rows="4" cols="50" required></textarea><br>
+                </label>
+                <label for="os">Operation System*
+                <br>
+                <select id="os">
+                    <option value="windows-xp">Windows XP</option>
+                    <option value="mac-os">MacOS</option>
+                    <option value="linux">Linux</option>
+                </select>
+                </label>
+                <br>
+                <label for="product">Product*
+                <br>
+                <select id="product">
+                    <option value="a">A</option>
+                    <option value="b">B</option>
+                    <option value="c">C</option>
+                </select>
+                </label>
+                <br>
+                <label for="versions">
+                    Versions*
+                    <br>
+                    <textarea id="version" rows="2" cols="14" required></textarea><br>
+                </label>
+                <div class="radio-buttons">
+                    <label>
+                        License <br>
+                        <input type="radio" name="license" value="free" checked> Free<br>
+                        <input type="radio" name="license" value="business"> Business<br>
+                    </label>
+                </div>
+                <label for="severity">Severity:
+                <br>
+                <select id="severity">
+                    <option value="a">Hign</option>
+                    <option value="b">Medium</option>
+                    <option value="c">Low</option>
+                </select>
+                </label>
+                <br>
+                <label>
+                    Attachments: <input type="file" name="myFile">
+                </label>
+            </form>
+            <div class="form-footer">
+                <input type="submit" value="Send"></button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

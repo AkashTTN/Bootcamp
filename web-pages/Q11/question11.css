@@ -1,0 +1,95 @@
+body {
+    background-color: rgb(39, 35, 35);
+    margin: 0 50px 0 50px;
+    border: 0.5px solid lightgrey;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    /* padding: auto; */
+    margin-bottom: 20px;
+}
+
+.mid-section {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 0 5% 0 5%;
+}
+
+h3 {
+    margin-left: 80px;
+    border-bottom: 1px #ccc solid;
+    position: relative;
+    width: 960px;
+}
+
+article {
+    box-sizing: border-box;
+    width: 960px;
+    background-color: lightpink;
+    padding: 10px;
+    margin: 20px auto;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    width: 920px;
+    background-color: rgb(17, 16, 16);
+    list-style-type: none;
+    margin: auto;
+}
+
+li {
+    font-size: larger;
+    margin: 10px;
+}
+
+h1 {
+    margin-left: 140px;
+}
+
+a, h1 {
+    color: lightgray;
+}
+  
+.mid-section-box {
+    background-color: rgb(39, 35, 35);
+    width: 960px;
+    height: 360px;
+    margin: 20px auto;
+}
+
+section {
+    display: grid;
+    grid-template-columns: 215px 215px 215px 215px;
+    grid-template-rows: 315px;
+    grid-gap: 33px;
+    margin: auto;
+}
+
+section > span {
+    background-color: goldenrod;
+}
+
+#captions {
+    display: grid;
+    grid-template-columns: 215px 215px 215px 215px;
+    grid-template-rows: 20px;
+    grid-gap: 33px;
+    margin: 0 auto 20px auto;
+}
+
+#captions > span {
+    background-color: tomato;
+}
+
+
+.footer {
+    padding: 0 12% 0 12%;
+    display: flex;
+    background-color: rgb(17, 16, 16);
+    color: lightgray;
+}
