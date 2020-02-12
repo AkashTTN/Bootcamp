@@ -1,0 +1,38 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.header {
+    border-bottom: 1px grey solid;
+}
+
+.content {
+    margin-bottom: auto;
+    margin-top: auto;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.dropDown {
+    background-color: turquoise;
+}
+
+.cardForm {
+    padding: 0;
+}
+
+.cardFooter { 
+    margin-top: 15px;
+}
+
+.cardHeader {
+    font-size: 25px;
+}
+
+#freeRadio {
+    margin-left: 10px;
+}
+
+#businessRadio {
+    margin-left: 30px;
+}
