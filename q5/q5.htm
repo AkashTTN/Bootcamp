@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Assignment Question 5</title>
+</head>
+<body>
+    <script>
+        emp = [
+            {
+                name: 'Akash',
+                age: 22,
+                salary: '15000',
+                dob: '2/2/22'
+            },
+            {
+                name: 'Aman',
+                age: 23,
+                salary: '16000',
+                dob: '3/3/23'
+            },
+            {
+                name: 'Akshita',
+                age: 24,
+                salary: '17000',
+                dob: '4/4/24'
+            },
+            {
+                name: 'Rajat',
+                age: 22,
+                salary: '15000',
+                dob: '5/5/25'
+            }
+        ]
+        console.log('Employee Data', emp);
+        console.log('Employees with salary greater than 15k');
+        emp.forEach(element => {
+            if (element.salary >  15000) {
+                console.log(element);
+            }
+        });
+
+        console.log('Grouping employees by age');
+        emp_group = {};
+        emp.forEach(element => {
+            if (element.age in emp_group) {
+                emp_group[element.age].push({...element});
+            } else {
+                emp_group[element.age] = [];
+                emp_group[element.age].push({...element});
+            }
+        });
+        console.log(emp_group, typeof emp_group['22']);
+
+        // Adding an employee with age greater than 30 and salary less than 1000
+        emp.push({
+            name: 'Amit',
+            age: 31,
+            salary: '500'
+        })
+
+        console.log('Employees with salary less than 1k and age greater than 30 get a raise');
+        emp.forEach(element => {
+            if (element.salary < 1000 && element.age > 30) {
+                console.log(`${element.name}'s salary before raise ${element.salary}`);
+                element.salary *= 5;
+                console.log(`${element.name}'s salary after raise ${element.salary}`);
+            }
+        });
+    </script>
+</body>
+</html>
