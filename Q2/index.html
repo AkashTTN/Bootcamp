@@ -36,7 +36,8 @@
         
             <div class="cardForm card border col-lg-4 col-sm-10">
                 <div class="cardHeader card-header bg-secondary">Bug Report</div>
-                <div class="cardBody card-body">
+                <div class="cardBodyWrapper">
+                    <div class="cardBody card-body">
                         <form>
                             <div class="form-group">
                                 <label for="title">Title</label>
@@ -83,7 +84,7 @@
                                                 Free
                                             </label>
                                             <label class="form-check-label" id="businessRadio" for="businessRadio">
-                                                <input class="form-check-input" type="radio" id="businessRadio" name="licenseRadio" value="business">                                    </div>
+                                                <input class="form-check-input" type="radio" id="businessRadio" name="licenseRadio" value="business">                                    
                                                 Business
                                             </label>
                                     </div>                         
@@ -102,7 +103,9 @@
                                 <input type="file" class="custom-file-input" id="customFile">
                                 <label class="custom-file-label" for="customFile">Choose file</label>
                             </div>                                     
-                        </form>
+                        </form>                
+                    </div>
+                </div>
                 <div class="cardFooter card-footer bg-light">
                     <input type="submit" value="Send" class="btn btn-info d-flex ml-auto"></input>
                 </div>
