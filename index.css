@@ -1,0 +1,65 @@
+body {
+    background-color: tomato;
+}
+
+header {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+#navlinks {
+    list-style: none;
+}
+
+#login {
+    float: right;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 10% 90%;
+}
+
+section {
+    margin: 30px;
+}
+
+#section1 {
+    display: flex;
+    justify-content: space-between;
+}
+ 
+#section2 {
+    display: flex;
+}
+
+#section2-para {
+    margin-left: 20px;
+} 
+
+#section3 form {
+    display: flex;
+    flex-direction: row;
+}
+
+.form-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-item input[type="email"], input[type="submit"], #label-email  {
+    margin-left: 10px;
+}
+
+.form-item > input[type="submit"] {
+    position: relative;
+    top: 20px;
+}
+
+table {
+     width: 40%;
+}
+
+th, td {
+    text-align: center;
+}
