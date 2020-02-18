@@ -15,9 +15,17 @@ header {
     float: right;
 }
 
+#content {
+    display: flex;
+    flex-direction: row;
+}
+
+aside {
+    flex: 0.1;
+}
+
 main {
-    display: grid;
-    grid-template-columns: 10% 90%;
+    flex: 0.9;
 }
 
 section {
@@ -33,7 +41,7 @@ section {
     display: flex;
 }
 
-#section2-para {
+#section2-article {
     margin-left: 20px;
 } 
 
@@ -51,9 +59,9 @@ section {
     margin-left: 10px;
 }
 
-.form-item > input[type="submit"] {
-    position: relative;
-    top: 20px;
+#form-submit {
+    display: flex;
+    flex-direction: column-reverse;
 }
 
 table {

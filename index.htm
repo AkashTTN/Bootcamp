@@ -13,8 +13,8 @@
         <img src="https://source.unsplash.com/50x50/?nature,water" alt="Logo">
         <button id="login">Login</button>
     </header>
-    <main>
-        <aside>
+    <div id="content">
+        <aside id="nav">
             <nav>
                 <ul id="navlinks">
                     <li><a href="#">Link 1</a></li>
@@ -23,8 +23,7 @@
                 </ul>
             </nav>
         </aside>
-        
-        <section id="content">
+        <main>
             <section id="section1">
                 <img src="https://source.unsplash.com/150x150/?nature,water" alt="random image">
                 <img src="https://source.unsplash.com/150x150/?nature,water" alt="random image">
@@ -33,7 +32,7 @@
             </section>
             <section id="section2">
                 <img src="https://source.unsplash.com/300x300/?nature,water">
-                <p id="section2-para">
+                <article id="section2-article">
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis quas voluptatem magni repudiandae
                     ipsam! Velit sit rem eius beatae voluptas non itaque, cumque facere id ab ad architecto quod quia!
                     Dolorem eligendi ea nihil doloremque iure illo tempore dolorum fugiat vitae, temporibus magnam rem
@@ -41,7 +40,7 @@
                     autem fuga enim soluta nulla quasi illo veritatis, facilis cupiditate et numquam quod illum? Impedit,
                     at. Excepturi similique nobis nihil veritatis quidem adipisci quis cupiditate tempore veniam. Minima,
                     quasi molestiae magnam rem porro facere neque ducimus placeat qui, cum non.
-                </p>
+                </article>
             </section>
             <section id="section3">
                 <form action="#">
@@ -65,7 +64,7 @@
                             placeholder="Enter email" 
                         >
                     </div>
-                    <div class="form-item">
+                    <div class="form-item" id="form-submit">
                         <input type="submit" value="Submit">
                     </div>
                 </form>
@@ -92,8 +91,8 @@
                     </tbody>                  
                 </table>
             </section>
-        </section>       
-    </main>
+        </main>
+    </div>
 </body>
 
 </html>
