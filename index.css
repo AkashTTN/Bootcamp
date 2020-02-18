@@ -5,10 +5,12 @@ body {
 header {
     margin-left: 40px;
     margin-right: 40px;
+    border-bottom: 1px solid black;
 }
 
 #navlinks {
     list-style: none;
+    font-size: 40px;
 }
 
 #login {
@@ -22,6 +24,7 @@ header {
 
 aside {
     flex: 0.1;
+    border-right: 1px solid black;
 }
 
 main {
