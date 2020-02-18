@@ -1,5 +1,4 @@
 ### Topics: CSS- Selectors, Fonts, Box Model  
-### Screenshot  
 #### Apply properties learnt into the layout  
 Font Properties:  
 Apply font properties (font-family, font-weight, font-size etc) on the given text.  
@@ -14,8 +13,10 @@ Combinators
  Apply combinators (direct child >, adjacent +,  etc)  
 
 Attributes
-Use attributes selector (text, number etc) 
-![](./question.png) 
+Use attributes selector (text, number etc)
+
+### Screenshot  
+![](./question.png)  
 
 ### Replica
 ![](./replica.png)
