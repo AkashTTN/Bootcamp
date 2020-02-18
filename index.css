@@ -1,0 +1,57 @@
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Lacquer&display=swap');
+
+/* Border Properties */
+div {
+    border: 2px solid black;
+    margin: 10px;
+    padding: 10px;
+}
+
+
+#box-1 p {
+    font-family: 'Lacquer', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: coral;
+}
+
+/* Background Properties */
+#box-2 {
+    color: white;
+    background-image: url('https://source.unsplash.com/user/erondu/1600x900');
+    background-size: initial;
+    background-position: right;
+}
+
+/* Pseudo Classes */
+#box-3 li:first-child {
+    font-style: italic;
+}
+
+#box-3 li:last-child {
+    font-weight: bold;
+}
+
+#box-3 li:nth-child(3) {
+    font-size: 20px;
+}
+
+#box-3 li:nth-child(2)::before {
+    content: 'Before Pseudo Class ';
+}
+
+#box-3 li:nth-child(4)::after {
+    content: ' After Pseudo Class';
+}
+
+/* Combinators */
+#box-4 h2 + p {
+    color: firebrick;
+}
+
+#box-4 p ~ p {
+    color: goldenrod;
+}
+
+#box-5 > input[type="text"] {
+    background-color: greenyellow;
+}
