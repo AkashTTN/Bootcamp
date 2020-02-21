@@ -1,104 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./font/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>FEEN Session Hotel Website</title>
+    <title>FEEN Session Facebook Website</title>
 </head>
+
 <body>
-    <nav id="navbar-1">
+    <header>
         <div class="container">
-            <ul class="page-list">
-                <li><a href="#">future students</a></li>
-                <li><a href="#">our community</a></li>
-                <li><a href="#">courses</a></li>
-                <li><a href="#">events</a></li>
-                <li><a href="#">team</a></li>
-                <li><a href="#">blog</a></li>
-                <li><a href="#">style guide</a></li>
-                <li><a href="#">testimonials</a></li>
-            </ul>
-            <ul id="social-media">
-                <li><i class="fa fa-google-plus" aria-hidden="true"></i></li>
-                <li><i class="fa fa-pinterest" aria-hidden="true"></i></li>
-                <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
-                <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
-                <li><i class="fa fa-facebook" aria-hidden="true"></i></li>             
-            </ul>
+            <div id="logo">
+                <h1>facebook</h1>
+            </div>
+            <div id="login">
+                <table>
+                    <tr>
+                        <td>Email or Phone</td>
+                        <td>Password</td>
+                    </tr>
+                    <tr>
+                        <td><input type="email" name="email" id="email"></td>
+                        <td><input type="password" name="password" id="password"></td>
+                        <td><button>Log In</button></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Forgotten account?</td>
+                    </tr>
+                </table>
+            </div>
         </div>
-    </nav>
-    <nav id="navbar-2">
+    </header>
+    <main>
         <div class="container">
-            <i class="fa fa-graduation-cap fa-2x" aria-hidden="true"></i>
-            <div id="container-logo">
-                <h1>School Zone</h1>
-                <p>Best Education Wordpress Theme</p>
-            </div>
-            <i class="fa fa-phone fa-2x" aria-hidden="true"></i>
-            <div id="container-contact">
-                <p>(888) 123-45678</p>
-                <p>email@schoolzone.com</p>
-            </div>
-            <i class="fa fa-map-marker fa-2x" aria-hidden="true"></i>
-            <div id="container-location">
-                <span>Kathmandu, Nepal</span>
-            </div>
-            <button>APPLY NOW</button>
+            <section id="section-info">
+                <p>
+                    Facebook helps you connect and share with the people in your life.
+                </p>
+                <img src="./images/img.png" alt="image" width="537" height="195">
+            </section>
+            <section id="section-register">
+                <form action="#">
+                    <div class="form-content-wrapper">
+                        <h2>Create an account</h2>
+                        <p id="form-subheading">It's quick and easy.</p>
+                    </div>
+                    <div class="form-content-wrapper">
+                        <div class="form-group">
+                            <input class="form-name" type="text" placeholder="First name">
+                            <input class="form-name" type="text" placeholder="Surname">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Mobile number or email address">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" placeholder="New password">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="dob">Birthday</label><br>
+                            <select aria-label="Day" name="birthday_day" id="day" title="Day">
+                                <option value="0" selected="1">Day</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                            </select>
+                            <select aria-label="Month" name="birthday_month" id="month"
+                                title="Month">
+                                <option value="0">Month</option>
+                                <option value="1">Jan</option>
+                                <option value="2" selected="1">Feb</option>
+                                <option value="3">Mar</option>
+                                <option value="4">Apr</option>
+                            </select>
+                            <select  aria-label="Year" name="birthday_year" id="year" title="Year">
+                                <option value="0">Year</option>
+                                <option value="2020">2020</option>
+                            </select>
+                            <i class="fa fa-question-circle" aria-hidden="true"></i>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="gender">Gender</label><br>
+                            <input type="radio" name="gender" id="genderFemale" value="female">
+                            <label class="radio-label" for="genderFemale">Female</label>
+                            <input type="radio" name="gender" id="genderMale" value="male">
+                            <label class="radio-label" for="genderMale">Male</label>
+                            <input type="radio" name="gender" id="genderCustome" value="custom">
+                            <label for="genderCustome">Custom</label>
+                            <i class="fa fa-question-circle" aria-hidden="true"></i>
+                        </div>
+                        <div class="form-group">
+                            <p class="form-group-para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima
+                                iusto repellat unde exercitationem
+                                dolorem inventore nam ea harum cum doloremque.</p>
+                        </div>
+                        <div class="form-group">
+                            <a href="#">Sign Up</a>
+                        </div>
+                        <div class="form-group" id="form-footer">
+                            <p><a href="#">Create a Page</a> for a celebrity, band or business.</p>
+                        </div>
+                    </div>
+                </form>
+            </section>
         </div>
-    </nav>
-    <nav id="navbar-3">
-        <div class="container">
-            <ul class="page-list">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Theme Info</a></li>
-                <li><a href="#">Courses</a></li>
-                <li><a href="#">team</a></li>
-                <li><a href="#">events</a></li>
-                <li><a href="#">testimonials</a></li>
-                <li><a href="#">Page Examples</a></li>
-                <li><a href="#">Shortcodes</a></li>
-                <li><a href="#">Style Guide</a></li>
-                <li><a href="#">Shop</a></li>
-                <li><i class="fa fa-search" aria-hidden="true"></i></li>
-            </ul>
-        </div>
-    </nav>
-    <main id="main">
-        <section>
-            <div id="section-overlay">
-                <div id="section-content">
-                    <h2>Better education for a</h2>
-                    <h2>Better world</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit delectus cum sit itaque cupiditate tenetur.</p>
-                    <a href="#" class="current">GET STARTED NOW</a>
-                    <a href="#">GET STARTED NOW</a>
-                </div>
-            </div>
-        </section>
-        <section>
-            <div id="box-1" class="box">
-                <i class="fa fa-graduation-cap fa-lg" aria-hidden="true"></i>
-                <h4>Future Students</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, dolores.</p>
-            </div>
-            <div id="box-2" class="box">
-                <i class="fa fa-users fa-lg" aria-hidden="true"></i>
-                <h4>Future Students</h4>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut, similique.</p>
-            </div>
-            <div id="box-3" class="box">
-                <i class="fa fa-book fa-lg" aria-hidden="true"></i>
-                <h4>Courses</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, praesentium!</p>
-            </div>
-            <div id="box-4" class="box">
-                <i class="fa fa-calendar fa-lg" aria-hidden="true"></i>
-                <h4>Events</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, commodi.</p>
-            </div>
-        </section>
     </main>
+    <footer>
+
+    </footer>
 </body>
+
 </html>

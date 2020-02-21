@@ -1,5 +1,6 @@
+## Recreate facebook registeration page
 ### Layout
-![](./exercise.png)
+![](./facebook_layout.png)
 
 ### Replica
 ![](./replica.png)
