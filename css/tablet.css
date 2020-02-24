@@ -1,0 +1,9 @@
+#section-2 .card:first-child {
+    float: none;
+    width: 100%;
+}
+
+#section-2 .card:last-child {
+    float: none;
+    width: 100%;
+}

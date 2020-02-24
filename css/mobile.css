@@ -1,0 +1,59 @@
+#section-1 header nav ul {
+    display: none;
+}
+
+#section-1 header nav #navbar-button {
+    display: block;
+    padding: 0.75rem 1rem;
+    float: right;
+    position: relative;
+}
+
+#section-1 header nav #navbar-button:hover ~ ul {
+    list-style: none;
+    display: block;
+    background: green;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 50%;
+    z-index: 2;
+    padding-top: 2rem;
+    height: 200vh;
+}
+
+#section-1 header nav #navbar-button:hover ~ ul > li {
+    float: none;
+    padding: 1rem;
+}
+
+#section-1 header nav .logo {
+    padding-top: 1rem;
+}
+
+#section-1 #section-content h1 {
+    padding-bottom: 2rem;
+}
+
+#section-1 #section-content #travel {
+    display: block;
+    border: none;
+    padding: 0;
+    margin-bottom: 2rem;
+}
+
+#section-1 #section-content #gallery {
+    display: block;
+    padding: 0;
+    margin-bottom: 2rem;
+}
+
+#section-2 .card:first-child {
+    float: none;
+    width: 100%;
+}
+
+#section-2 .card:last-child {
+    float: none;
+    width: 100%;
+}
