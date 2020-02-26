@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://use.fontawesome.com/273e5b0695.js"></script>
+    <title>Flex</title>
+</head>
+<body>
+    <div class="container">
+        <header>    
+            <nav>
+                <img src="./images/logo.png" alt="logo">
+                <select id="lang-dropdown">
+                    <option value="0">ENG</option>
+                    <option value="1">HINDI</option>
+                    <option value="2">SPANISH</option>
+                  </select>
+                <ul>
+                    <li><i class="fa fa-home fa-2x" aria-hidden="true"></i></li>
+                    <li>About</li>
+                    <li>Ecosystems</li>
+                    <li>Resources</li>
+                    <li>Contact Us</li>
+                    <li><i class="fa fa-user fa-2x" aria-hidden="true"></i></li>
+                </ul>
+            </nav>
+        </header>
+        <main id="banner">
+            <ul id="breadcrumb">
+                <li>Home&nbsp&nbsp&nbsp</li>
+                <li>About&nbsp&nbsp&nbsp</li>
+                <li>Partners&nbsp&nbsp&nbsp</li>
+            </ul>
+            <div id="banner-info">
+                <h1>Partners</h1>
+                <h4>Interested in becoming a partner ?</h4>
+                <a href="#" class="btn">Get Involved</a>
+            </div>
+        </main>
+        <section id="videos">
+            <h3 class="section-heading">Featured Videos</h3>
+            <div id="video-wrapper">
+                <div id="current-video">
+                    <img src="./images/video.jpg" alt="video">
+                </div>
+                <div id="video-list">
+                    <i class="fa fa-arrow-up fa-2x" aria-hidden="true"></i>
+                    <div class="video-listing">
+                        <div class="overlay">
+                            <img src="./images/video.jpg" alt="video">
+                        </div>
+                        <span>
+                            <p>Juhee Ahmed</p>
+                            <p>CEO, Fab CI</p>
+                        </span>
+                    </div>
+
+                    <div class="video-listing">
+                        <div class="overlay">
+                            <img src="./images/video.jpg" alt="video">
+                        </div>
+                        <span>
+                            <p>Juhee Ahmed</p>
+                            <p>CEO, Fab CI</p>
+                        </span>
+                    </div>
+                    <div class="video-listing">
+                        <div class="overlay">
+                            <img src="./images/video.jpg" alt="video">
+                        </div>
+                        <span>
+                            <p>Juhee Ahmed</p>
+                            <p>CEO, Fab CI</p>
+                        </span>                        
+                    </div>
+                    <i class="fa fa-arrow-down fa-2x" aria-hidden="true"></i>
+                </div>
+            </div>
+        </section>
+        <section id="partners">
+            <h3 class="section-heading">Our Partners</h3>
+            <div id="partner-images">
+                <img class="hover-effect" src="./images/partner.png" alt="partner-image">
+                <img class="hover-effect" src="./images/partner.png" alt="partner-image">
+                <img class="hover-effect" src="./images/partner.png" alt="partner-image">
+                <img class="hover-effect" src="./images/partner.png" alt="partner-image">
+                <img class="hover-effect" src="./images/partner.png" alt="partner-image">
+                <img class="hover-effect" src="./images/partner.png" alt="partner-image">
+                <img class="hover-effect" src="./images/partner.png" alt="partner-image">
+                <img class="hover-effect" src="./images/partner.png" alt="partner-image">
+                <img class="hover-effect" src="./images/partner.png" alt="partner-image">
+                <img class="hover-effect" src="./images/partner.png" alt="partner-image">
+                <img class="hover-effect" src="./images/partner.png" alt="partner-image">
+                <img class="hover-effect" src="./images/partner.png" alt="partner-image">
+                <img class="hover-effect" src="./images/partner.png" alt="partner-image">
+                <img class="hover-effect" src="./images/partner.png" alt="partner-image">
+                <img class="hover-effect" src="./images/partner.png" alt="partner-image">
+                <img class="hover-effect" src="./images/partner.png" alt="partner-image">
+            </div>
+        </section>
+        <section id="partner-form">
+            <h3 class="section-heading">Become A Partner</h3>
+            
+            <table>
+                <form action="#"></form>
+                    <tbody>
+                        <tr>
+                            <div class="form-group">
+                                <span>
+                                    <label for="full-name">FULL NAME</label>
+                                </span>
+                                <span>
+                                    <label for="company-name">COMPANY NAME</label>                            
+                                </span>
+                                <span>
+                                    <label for="email">EMAIL</label>
+                                </span>
+                                <!-- <td><label for="full-name">FULL NAME</label></td>
+                                <td><label for="company-name">COMPANY NAME</label></td>                            
+                                <td><label for="email">EMAIL</label></td> -->
+                            </div>
+                        </tr>
+                        <tr>
+                            <div class="form-group">
+                                <input class="hover-effect" type="text" name="full-name" id="full-name">
+                                <input class="hover-effect" type="text" name="company-name" id="company-name">
+                                <input class="hover-effect" type="email" name="email" id="email">
+
+                                <!-- <td><input type="text" name="full-name" id="full-name"></td>
+                                <td><input type="text" name="company-name" id="company-name"></td>
+                                <td><input type="email" name="email" id="email"></td>                       -->
+                            </div>
+                        </tr>
+                        <tr>
+                            <div class="form-group">
+                                <span>
+                                    <label for="description">I'D LIKE TO LEARN MORE ABOUT</label>
+                                </span>
+                                <span>
+                                    <label for="reason">WHY I'M INTERESTED IN AGNi</label>
+                                </span>
+                            </div>
+                        </tr>
+                        <tr>
+                            <div class="form-group">
+                                <textarea class="hover-effect" name="description" id="description" placeholder="Your Text Goes Here"></textarea>
+                                <textarea class="hover-effect" name="reason" id="reason" placeholder="Your Text Goes Here"></textarea>
+                            </div>
+                        </tr>
+                        <tr><button type="submit" class="btn">SUBMIT</button></tr>
+                    </tbody>
+                </form> 
+            </table>    
+        </section>
+        <footer>
+            <div class="footer-container">
+                <i class="fa fa-paper-plane fa-4x" aria-hidden="true"></i>
+                <p>Submit Your Innovation</p>
+                <a href="#" class="btn">APPLY NOW</a>
+            </div>
+            <div class="footer-container">
+                <div class="wrapper">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                    <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                    <p>&copy; 2018 AGNI. All Rights Reserved. Terms of Use | Privacy Policy</p>
+                </div>
+                <div class="wrapper">
+                    <p>Call us @ Toll Free Number</p>
+                    <p id="number">1800-345-1800</p>
+                    <p>11 AM to 5 PM, Mon - Fri</p>
+                </div>
+            </div>
+        </footer>
+        
+    </div>
+</body>
+</html>
