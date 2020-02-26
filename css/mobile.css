@@ -1,0 +1,62 @@
+header nav {
+    justify-content: center;
+}
+
+header nav ul {
+    margin-left: 0;
+}
+
+section#videos #video-wrapper {
+    /* justify-content: center; */
+    flex-direction: column;
+    align-items: center;
+}
+
+/* not working, invalid property value
+section#videos #video-wrapper {
+    flex: 1 0 2;
+} */
+
+section#videos #video-wrapper #current-video img {
+    padding-right: 0;
+}
+
+section#videos #video-wrapper #video-list {
+    align-items: center;
+}
+
+section#partner-form form .form-wrapper:first-child,
+section#partner-form form .form-wrapper:last-child {
+    flex-direction: column;
+}
+
+.footer-container {
+    flex-direction: column;
+}
+
+.footer-container .wrapper:first-child {
+    order: 1;
+    text-align: center;
+}
+
+/* without footer doesnt work */
+footer .footer-container .wrapper:last-child {
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+@media only screen and (max-width: 500px) {
+    header nav {
+        flex-direction: column;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul li:last-child {
+        padding: 1rem;
+    }
+    
+}

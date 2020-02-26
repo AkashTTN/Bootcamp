@@ -4,19 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/mobile.css"> 
     <script src="https://use.fontawesome.com/273e5b0695.js"></script>
     <title>Flex</title>
 </head>
 <body>
-    <div class="container">
-        <header>    
+    <header>
+        <div class="container">
             <nav>
                 <img src="./images/logo.png" alt="logo">
                 <select id="lang-dropdown">
                     <option value="0">ENG</option>
                     <option value="1">HINDI</option>
                     <option value="2">SPANISH</option>
-                  </select>
+                    </select>
                 <ul>
                     <li><i class="fa fa-home fa-2x" aria-hidden="true"></i></li>
                     <li>About</li>
@@ -26,8 +27,11 @@
                     <li><i class="fa fa-user fa-2x" aria-hidden="true"></i></li>
                 </ul>
             </nav>
-        </header>
-        <main id="banner">
+        </div>    
+    </header>
+
+    <main id="banner">
+        <div class="container">
             <ul id="breadcrumb">
                 <li>Home&nbsp&nbsp&nbsp</li>
                 <li>About&nbsp&nbsp&nbsp</li>
@@ -38,8 +42,11 @@
                 <h4>Interested in becoming a partner ?</h4>
                 <a href="#" class="btn">Get Involved</a>
             </div>
-        </main>
-        <section id="videos">
+        </div>  
+    </main>
+    
+    <section id="videos">
+        <div class="container">
             <h3 class="section-heading">Featured Videos</h3>
             <div id="video-wrapper">
                 <div id="current-video">
@@ -78,83 +85,70 @@
                     <i class="fa fa-arrow-down fa-2x" aria-hidden="true"></i>
                 </div>
             </div>
-        </section>
-        <section id="partners">
+        </div>
+    </section>
+
+    <section id="partners">
+        <div class="container">
             <h3 class="section-heading">Our Partners</h3>
             <div id="partner-images">
-                <img class="hover-effect" src="./images/partner.png" alt="partner-image">
-                <img class="hover-effect" src="./images/partner.png" alt="partner-image">
-                <img class="hover-effect" src="./images/partner.png" alt="partner-image">
-                <img class="hover-effect" src="./images/partner.png" alt="partner-image">
-                <img class="hover-effect" src="./images/partner.png" alt="partner-image">
-                <img class="hover-effect" src="./images/partner.png" alt="partner-image">
-                <img class="hover-effect" src="./images/partner.png" alt="partner-image">
-                <img class="hover-effect" src="./images/partner.png" alt="partner-image">
-                <img class="hover-effect" src="./images/partner.png" alt="partner-image">
-                <img class="hover-effect" src="./images/partner.png" alt="partner-image">
-                <img class="hover-effect" src="./images/partner.png" alt="partner-image">
-                <img class="hover-effect" src="./images/partner.png" alt="partner-image">
-                <img class="hover-effect" src="./images/partner.png" alt="partner-image">
-                <img class="hover-effect" src="./images/partner.png" alt="partner-image">
-                <img class="hover-effect" src="./images/partner.png" alt="partner-image">
-                <img class="hover-effect" src="./images/partner.png" alt="partner-image">
+                <img src="./images/partner.png" alt="partner-image">
+                <img src="./images/partner.png" alt="partner-image">
+                <img src="./images/partner.png" alt="partner-image">
+                <img src="./images/partner.png" alt="partner-image">
+                <img src="./images/partner.png" alt="partner-image">
+                <img src="./images/partner.png" alt="partner-image">
+                <img src="./images/partner.png" alt="partner-image">
+                <img src="./images/partner.png" alt="partner-image">
+                <img src="./images/partner.png" alt="partner-image">
+                <img src="./images/partner.png" alt="partner-image">
+                <img src="./images/partner.png" alt="partner-image">
+                <img src="./images/partner.png" alt="partner-image">
+                <img src="./images/partner.png" alt="partner-image">
+                <img src="./images/partner.png" alt="partner-image">
+                <img src="./images/partner.png" alt="partner-image">
+                <img src="./images/partner.png" alt="partner-image">
             </div>
-        </section>
-        <section id="partner-form">
-            <h3 class="section-heading">Become A Partner</h3>
-            
-            <table>
-                <form action="#"></form>
-                    <tbody>
-                        <tr>
-                            <div class="form-group">
-                                <span>
-                                    <label for="full-name">FULL NAME</label>
-                                </span>
-                                <span>
-                                    <label for="company-name">COMPANY NAME</label>                            
-                                </span>
-                                <span>
-                                    <label for="email">EMAIL</label>
-                                </span>
-                                <!-- <td><label for="full-name">FULL NAME</label></td>
-                                <td><label for="company-name">COMPANY NAME</label></td>                            
-                                <td><label for="email">EMAIL</label></td> -->
-                            </div>
-                        </tr>
-                        <tr>
-                            <div class="form-group">
-                                <input class="hover-effect" type="text" name="full-name" id="full-name">
-                                <input class="hover-effect" type="text" name="company-name" id="company-name">
-                                <input class="hover-effect" type="email" name="email" id="email">
+        </div>
+    </section>
 
-                                <!-- <td><input type="text" name="full-name" id="full-name"></td>
-                                <td><input type="text" name="company-name" id="company-name"></td>
-                                <td><input type="email" name="email" id="email"></td>                       -->
-                            </div>
-                        </tr>
-                        <tr>
-                            <div class="form-group">
-                                <span>
-                                    <label for="description">I'D LIKE TO LEARN MORE ABOUT</label>
-                                </span>
-                                <span>
-                                    <label for="reason">WHY I'M INTERESTED IN AGNi</label>
-                                </span>
-                            </div>
-                        </tr>
-                        <tr>
-                            <div class="form-group">
-                                <textarea class="hover-effect" name="description" id="description" placeholder="Your Text Goes Here"></textarea>
-                                <textarea class="hover-effect" name="reason" id="reason" placeholder="Your Text Goes Here"></textarea>
-                            </div>
-                        </tr>
-                        <tr><button type="submit" class="btn">SUBMIT</button></tr>
-                    </tbody>
-                </form> 
-            </table>    
-        </section>
-        <footer>
+    <section id="partner-form">
+        <div class="container">
+            <h3 class="section-heading">Become A Partner</h3>
+            <form action="#">
+                <div class="form-wrapper">
+                    <div class="form-group">
+                        <label for="full-name">FULL NAME</label>
+                        <input class="hover-effect" type="text" name="full-name" id="full-name">
+                    </div>
+                    <div class="form-group">
+                        <label for="company-name">COMPANY NAME</label>                            
+                        <input class="hover-effect" type="text" name="company-name" id="company-name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">EMAIL</label>
+                        <input class="hover-effect" type="email" name="email" id="email">
+                    </div>
+                </div>
+                <div class="form-wrapper">
+                    <div class="form-group">
+                        <label for="description">I'D LIKE TO LEARN MORE ABOUT</label>
+                        <textarea class="hover-effect" name="description" id="description" placeholder="Your Text Goes Here"></textarea>
+                        <span>30/200 words</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="reason">WHY I'M INTERESTED IN AGNi</label>
+                        <textarea class="hover-effect" name="reason" id="reason" placeholder="Your Text Goes Here"></textarea>
+                        <span>30/200 words</span>
+                    </div>
+                </div>
+            </form>   
+            <button type="submit" class="btn">SUBMIT</button>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
             <div class="footer-container">
                 <i class="fa fa-paper-plane fa-4x" aria-hidden="true"></i>
                 <p>Submit Your Innovation</p>
@@ -173,8 +167,7 @@
                     <p>11 AM to 5 PM, Mon - Fri</p>
                 </div>
             </div>
-        </footer>
-        
-    </div>
+        </div>
+    </footer>
 </body>
 </html>
