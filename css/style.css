@@ -18,12 +18,12 @@ i {
     color: white;
 }
 
-section {
+section .container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 3% 10%;
+    padding: 2rem;
 }
 
 form {
@@ -47,6 +47,7 @@ form {
     display: flex;
     align-items: center;
     width: 100%;
+    margin-bottom: 1rem;
 }
 
 .form-wrapper {
@@ -126,6 +127,7 @@ section#partner-form .form-group textarea {
     margin: 0 auto;
     height: 100%;
     width: 100%;
+    padding: 2rem;
 }
 
 header {
@@ -142,7 +144,7 @@ header nav {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    padding: 1.5rem;
+    /* padding: 1.5rem; */
 }
 
 header nav img {
@@ -337,4 +339,14 @@ footer .footer-container .wrapper:last-child {
 footer .footer-container .wrapper #number {
     font-size: 2rem;
     font-weight: bold;
+}
+
+/* to switch from 4 images in a row to 2, skipping 3 image layout */
+@media only screen and (max-width: 946px) {
+    section#partners #partner-images img {
+        background-color: white;
+        flex: 1 1 50%;
+        padding: 0.75rem 1rem;
+        border: 1px solid #ccc;
+    }    
 }
