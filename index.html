@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Clock</title>
+</head>
+<body>
+
+    <h2 id="greeting" class="margin-b"></h1>
+    <h1 id="time" class="margin-b"></h1>
+    <h2 id="date" class="margin-b"></h2>
+
+    <script>
+        var date;
+        var greetingElement = document.getElementById('greeting');
+        var dateElement = document.getElementById('date');
+        var timeElement = document.getElementById('time');
+
+        // Updates HTML tags with real time data
+        function updateHTML(greeting, time, date) {
+            greetingElement.innerHTML = greeting;
+            timeElement.innerHTML = time;
+            dateElement.innerHTML = date;
+        }
+
+        function startClock() {
+            var period;
+            date = new Date();
+
+            // Get date
+            var currentDate = date.toDateString();
+
+            // Get time and format it
+            var currentTime = date.toTimeString();
+
+            currentTime = currentTime.split(' G')[0].split(':');
+            
+            if(currentTime[0] > 12) {
+                period = 'PM';
+
+                // Change 24hr format to 12hr format
+                currentTime[0] = '0' + String(Number(currentTime[0]) - 12);
+
+                // Change array back to string
+                currentTime = currentTime.join(':');
+            } else {
+                period = 'AM';
+            }
+
+            var greeting;
+            if(period == 'AM') {
+                greeting = 'Good Morning';
+                if(currentTime[0] == '12' && currentTime[1] == '00') {
+                    greeting = 'Good Afternoon';
+                }
+            } else {
+                greeting = 'Good Afternoon';
+                if(currentTime[0] == '05') {
+                    greeting = 'Good Evening';
+                }
+                if(currentTime[0] == '09') {
+                    greeting = 'Good Night';
+                }
+            }
+
+            // Append AM/PM with time
+            currentTime += ' ' + period;
+            updateHTML(greeting, currentTime, currentDate);
+        }
+
+        setInterval(startClock, 1000); 
+    </script>
+    
+</body>
+</html>

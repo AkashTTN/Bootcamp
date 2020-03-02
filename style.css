@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: blue;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.margin-b {
+    margin-bottom: 2rem;
+}
+
+#greeting::after {
+    content: '';
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    border-bottom: 1rem solid white;
+    flex: 1;
+    padding-top: 2rem;
+}
+
+#greeting, #date {
+    font-size: 3rem;
+}
+
+#time {
+    font-size: 6rem;
+}
