@@ -63,6 +63,7 @@ counterFromTwo();
 counterFromTwo();
 
 console.log(counterFromOne(), counterFromTwo());
+// Output: 3 5
 
 
 // Given an array, say [1,2,3,4,5]. Print each element of an array after 3 secs.
@@ -78,4 +79,3 @@ arr = [1,2,3,4,5];
         }
     }, 3000);
 })(arr, 0);
-// Output: 3 5
