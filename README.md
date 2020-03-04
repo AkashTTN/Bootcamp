@@ -5,23 +5,23 @@
 #### Explain difference between Bind and Call (example).
 The difference between call() and bind() is that the call() sets the this keyword and executes the function immediately and it does not create a new copy of the function, while the bind() creates a copy of that function and sets the this keyword.
 
-Example:
-function greeting() {
-  console.log(`Hi, I am ${this.name} and I am ${this.age} years old`);
-}
-const john = {
-  name: 'John',
-  age: 24,
-};
+Example:  
+function greeting() {  
+  console.log(`Hi, I am ${this.name} and I am ${this.age} years old`);  
+}  
+const john = {  
+  name: 'John',  
+  age: 24,  
+};  
 
-***A binded copy is not stored***
-***Output: Hi, I am John and I am 24 years old***
-greeting.call(john);
+***A binded copy is not stored***  
+***Output: Hi, I am John and I am 24 years old***  
+greeting.call(john);  
 
-***A binded copy is stored***
-greetingJohn = greeting.bind(john);
-***Output: Hi, I am John and I am 24 years old***
-greetingJohn();
+***A binded copy is stored***  
+greetingJohn = greeting.bind(john);  
+***Output: Hi, I am John and I am 24 years old***  
+greetingJohn();   
 
 #### Explain 3 properties of argument object.  
 arguments is an Array-like object accessible inside functions that contains the values of the arguments passed to that function.  
