@@ -71,8 +71,8 @@ console.log('Given an array, say [1,2,3,4,5]. Print each element of an array aft
 arr = [1,2,3,4,5];
 
 (function printAfterDelay(arr, i) {
+    console.log(arr[i]);
     setTimeout(function() {
-        console.log(arr[i]);
         if(i < arr.length-1) {
             i += 1;
             printAfterDelay(arr, i);
