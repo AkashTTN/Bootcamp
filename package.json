@@ -1,0 +1,27 @@
+{
+  "name": "Bootcamp",
+  "version": "1.0.0",
+  "description": "Classes Inheritance Module import, export Inbuilt data structure Map Set Babel",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src -d lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AkashTTN/Bootcamp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AkashTTN/Bootcamp/issues"
+  },
+  "homepage": "https://github.com/AkashTTN/Bootcamp#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.7",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/preset-env": "^7.8.7"
+  }
+}
