@@ -6,8 +6,33 @@ let arr = [1, 2, 2, 3];
 console.log('Unique items in array:', new Set(arr));
 console.log('---------------');
 
+
 // Find the possible combinations of a string and store them in a MAP? 
-// To be done later
+function getPermutations(string) {
+
+    let results = [];
+
+    if(string.length === 1) {
+        results.push(string);
+        return results;
+    }
+
+    for (let index = 0; index < string.length; index++) {
+        const firstChar = string[index];
+        let charLeft = string.slice(0, index) + string.slice(index+1);
+        let innerPermutations = getPermutations(charLeft);
+
+        for (let j = 0; j < innerPermutations.length; j++) {
+            results.push(firstChar + innerPermutations[j]);
+        }
+    }
+
+    return results;
+}
+
+console.log('All possible combinations of string "abc"', getPermutations('abc'));
+console.log('---------------');
+
 
 // Write a program to implement inheritance upto 3 classes.The Class must have public variables and static functions.
 class Person {
