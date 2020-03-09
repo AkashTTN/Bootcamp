@@ -33,6 +33,18 @@ function func() {
 func.totalInvoke = 0;
 func.prototype.instanceCounter = 0;
 
+// Alternate Method
+// function One() {
+//     if(new.target == undefined) {
+//         One.invoke++;
+//     } else {
+//         One.instance++;
+//     }
+// }
+
+// One.invoke = 0;
+// One.instance = 0;
+
 // console.dir(func);
 func();
 func();
