@@ -37,11 +37,11 @@ console.log('---------------');
 // Write a program to implement inheritance upto 3 classes.The Class must have public variables and static functions.
 class Person {
 
-    NATIONALITY;
+    NATIONALITY = 'Indian';
 
     constructor(name = '', nationality = 'Indian') {
         this.name = name;
-        this.NATIONALITY = nationality;
+        // this.NATIONALITY = nationality;
     }
 
     static staticFunction() {
