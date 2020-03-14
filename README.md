@@ -21,3 +21,4 @@ Mango          	10   	delete
 Apple              	30   	delete     
 Banana             	45   	delete      
  
+### Session 2 task: add an edit button next to delete button that lets you edit the list item
