@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, useState } from 'react';
 import ListItem from './ListItem';
 
 import './App.css';
@@ -6,8 +6,9 @@ import './App.css';
 class App extends Component {
 
   state = {
-    fruit: [],
-    fruits: []
+    fruit: '',
+    fruits: [],
+    editMode: {index: null, isEdited: false}
   }
 
   changeHandler = (e) => {
@@ -28,17 +29,30 @@ class App extends Component {
 
     const { fruit } = this.state;
 
-    fruits.push({
-      fruitName: fruit.split('-')[0],
-      fruitQuantity: fruit.split('-')[1]
-    });
+    console.log(typeof fruit);
 
-    // console.log(fruits);
+    
+    if(this.state.editMode.isEdited === true) {
 
-    this.setState({
-      fruit: [],
-      fruits: fruits
-    }, () => console.log(this.state.fruits));
+      fruits[this.state.editMode.index] = {fruitName: fruit.split('-')[0], fruitQuantity: fruit.split('-')[1]};
+      this.setState({fruit: [], fruits, editMode: {index: null, isEdited: false}});
+
+    } else {
+
+      fruits.push({
+        fruitName: fruit.split('-')[0],
+        fruitQuantity: fruit.split('-')[1] || 0
+      });
+  
+      // console.log(fruits);
+  
+      this.setState({
+        fruit: [],
+        fruits: fruits
+      }, () => console.log(this.state.fruits));
+
+    }
+    
 
 
   }
@@ -51,6 +65,16 @@ class App extends Component {
     });
   }
 
+  editHandler = (index) => {
+    
+    this.setState((prevState) => {
+      const fruit = prevState.fruits[index];
+      console.log([fruit.fruitName, fruit.fruitQuantity]);
+      return { fruit: `${fruit.fruitName}-${fruit.fruitQuantity}`, editMode: {index, isEdited:true} };
+    });
+
+  }
+
   render() {
     // console.log(this.state.fruits)
     let listItems = (
@@ -58,9 +82,11 @@ class App extends Component {
         {
           this.state.fruits.map((item, index) => {
             return <ListItem
-              deleteHandler={() => this.deleteHandler(index)}
               fruitName={item.fruitName}
               fruitQuantity={item.fruitQuantity}
+              deleteHandler={() => this.deleteHandler(index)}
+              editHandler={() => this.editHandler(index)}
+              // isEdited={item.editMode}
             />
           })
         }
@@ -69,10 +95,10 @@ class App extends Component {
 
     return (
       <div className="App">
-        <form>
+        <form onSubmit={this.submitHandler}>
         <div>
-          <input type="text" value={this.state.fruit} onChange={this.changeHandler} />
-          <input type="submit" value="Add" onSubmit={this.submitHandler}/>
+          <input type="text" value={this.state.fruit} onChange={this.changeHandler} required/>
+          <input type="submit" value="Add"/>
         </div>
         </form>
         {listItems}

@@ -7,6 +7,7 @@ function ListItem(props) {
         <div className="list-item">
             <li>{props.fruitName}</li>
             <li>{props.fruitQuantity}</li>
+            <button onClick={props.editHandler}>Edit</button>
             <button onClick={props.deleteHandler}>Delete</button>
         </div>
     )
