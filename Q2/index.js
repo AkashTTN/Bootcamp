@@ -20,3 +20,9 @@ console.log(arrayTimeStamps);
 
 arrayTimeStampSeconds = arrayTimeStamps.map(item => item.split(':')[1]);
 console.log(arrayTimeStampSeconds);
+
+let sum = arrayTimeStampSeconds.reduce((sum, ele) => {
+    return sum += (+ele);
+}, 0)
+
+console.log(sum);
