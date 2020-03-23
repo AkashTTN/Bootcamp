@@ -1,1 +1,1 @@
-### Burger Builder Project + Accessing a Server (Firebase) using Axios + Routing + Form Validation
+### Burger Builder Project + Accessing a Server (Firebase) using Axios + Routing + Form Validation + REDUX
