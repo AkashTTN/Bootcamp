@@ -5,10 +5,18 @@ import App from './App';
 import { BrowserRouter } from 'react-router-dom';
 import * as serviceWorker from './serviceWorker';
 import { Provider } from 'react-redux';
-import { createStore } from 'redux';
-import reducer from './Store/reducer';
+import { createStore, applyMiddleware, combineReducers } from 'redux';
+import thunk from 'redux-thunk';
+import orderReducer from './Store/reducers/order';
+import burgerBuilderReducer from './Store/reducers/burgerBuilder';
 
-const store = createStore(reducer);
+
+const rootReducer = combineReducers({
+    burgerBuilder: burgerBuilderReducer,
+    order: orderReducer
+})
+
+const store = createStore(rootReducer, applyMiddleware(thunk));
 
 const app = (
     <Provider store={store}>
