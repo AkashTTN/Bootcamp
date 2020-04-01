@@ -69,4 +69,5 @@ const mapDispatchToProps = dispatch => {
     onTryAutoSignUp: () => dispatch(actions.authCheckState())
   }
 }
+
 export default withRouter(connect(mapStateToProps, mapDispatchToProps)(App));
