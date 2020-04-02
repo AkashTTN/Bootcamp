@@ -9,14 +9,14 @@ import { useDispatch, useSelector } from 'react-redux';
 import * as actions from '../../Store/actions/index';
 import axios from '../../axios';
 
-const burgerBuilder = props => {
+const BurgerBuilder = props => {
 
     const [purchasing, setPurchasing] = useState(false);
 
     const dispatch = useDispatch();
 
     const ings = useSelector(state => {
-        return state.burgerBuilder.ings
+        return state.burgerBuilder.ingredients
     })
 
     const price = useSelector(state => {
@@ -33,7 +33,7 @@ const burgerBuilder = props => {
 
     const onIngredientAdded = (ingName) => dispatch(actions.addIngredient(ingName))
     const onIngredientRemoved = (ingName) => dispatch(actions.removeIngredient(ingName))
-    const onInitIngredients = useCallback(() => dispatch(actions.initIngredients()), [])
+    const onInitIngredients = useCallback(() => dispatch(actions.initIngredients()), [dispatch])
     const onInitPurchase = () => dispatch(actions.purchaseInit())
     const onSetAuthRedirectPath = (path) => dispatch(actions.setAuthRedirectPath(path))
 
@@ -121,4 +121,4 @@ const burgerBuilder = props => {
 
 }
 
-export default withErrorHandler(burgerBuilder, axios);
+export default withErrorHandler(BurgerBuilder, axios);

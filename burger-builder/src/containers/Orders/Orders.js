@@ -6,7 +6,7 @@ import * as actions from '../../Store/actions/index';
 import { connect } from 'react-redux';
 import Spinner from '../../components/UI/Spinner/Spinner';
 
-const orders = props => {
+const Orders = props => {
 
     const { onFetchOrders } = props;
 
@@ -47,4 +47,4 @@ const maDispatchToProps = dispatch => {
     }
 }
 
-export default connect(mapStateToProps, maDispatchToProps)(withErrorHandler(orders, axios));
+export default connect(mapStateToProps, maDispatchToProps)(withErrorHandler(Orders, axios));

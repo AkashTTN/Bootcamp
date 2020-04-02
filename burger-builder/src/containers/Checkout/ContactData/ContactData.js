@@ -8,7 +8,7 @@ import { connect } from 'react-redux';
 import withErrorHandler from '../../../hoc/withErrorHandler/withErrorHandler';
 import * as actions from '../../../Store/actions/index';
 
-const contactData = props => {
+const ContactData = props => {
 
     const [orderForm, setOrderForm] = useState({
         name: {
@@ -191,4 +191,4 @@ const mapDispatchToProps = dispatch => {
     };
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(withErrorHandler(contactData, axios));
+export default connect(mapStateToProps, mapDispatchToProps)(withErrorHandler(ContactData, axios));

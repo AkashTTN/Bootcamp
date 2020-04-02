@@ -7,7 +7,7 @@ import { connect } from 'react-redux';
 import Spinner from '../../components/UI/Spinner/Spinner';
 import { Redirect } from 'react-router-dom';
 
-const auth = props => {
+const Auth = props => {
 
     const [authForm, setAuthForm] = useState({
         email: {
@@ -151,4 +151,4 @@ const mapDispatchToProps = dispatch => {
     }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(auth);
+export default connect(mapStateToProps, mapDispatchToProps)(Auth);

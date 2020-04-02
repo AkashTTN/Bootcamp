@@ -4,7 +4,7 @@ import Toolbar from '../Navigation/Toolbar/Toolbar';
 import SideDrawer from '../Navigation/SideDrawer/SideDrawer';
 import { connect } from 'react-redux';
 
-const layout = props => {
+const Layout = props => {
     const [sideDrawerIsVisible, setSideDrawerIsVisible] = useState(false);
 
     const sideDrawerClosedHandler = () => {
@@ -41,4 +41,4 @@ const mapStateToProps = state => {
     }
 }
 
-export default connect(mapStateToProps)(layout);
+export default connect(mapStateToProps)(Layout);

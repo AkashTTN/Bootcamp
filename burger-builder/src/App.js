@@ -19,7 +19,7 @@ const Auth = React.lazy(() => {
   return import('./containers/Auth/Auth');
 })
 
-const app = props => {
+const App = props => {
   const { onTryAutoSignUp } = props;
 
   useEffect(() => {
@@ -40,9 +40,9 @@ const app = props => {
     routes = (
       <>
         <Route path="/logout" component={Logout} />
-        <Route path="/checkout" render={(props) => { <Checkout {...props} /> }} />
-        <Route path="/orders" render={(props) => { <Orders {...props} /> }} />
-        <Route path="/auth" render={(props) => { <Auth {...props} /> }} />
+        <Route path="/checkout" render={(props) => <Checkout {...props} /> } />
+        <Route path="/orders" render={(props) =>  <Orders {...props} /> } />
+        <Route path="/auth" render={(props) =>  <Auth {...props} /> } />
         <Route path="/" exact component={BurgerBuilder} />
         <Redirect to="/" />
       </>
@@ -53,11 +53,23 @@ const app = props => {
     <div>
       <Layout>
         <Suspense fallback={<p>Loading...</p>}>{routes}</Suspense>
+        {/* <DemoComponent /> */}
       </Layout>
     </div>
   );
 
 }
+
+// const DemoComponent = () => {
+//   useEffect(() => {
+//     console.log('MOUNTED DEMO COMPONENT');
+//   }, [])
+
+//   return (
+//     <>
+//     </>
+//   )
+// }
 
 const mapStateToProps = state => {
   return {
@@ -71,4 +83,4 @@ const mapDispatchToProps = dispatch => {
   }
 }
 
-export default withRouter(connect(mapStateToProps, mapDispatchToProps)(app));
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(App));
