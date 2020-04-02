@@ -1,1 +1,1 @@
-### Burger Builder Project + Accessing a Server (Firebase) using Axios + Routing + Form Validation + advance redux + AUTHENTICATION
+### Burger Builder Project + Accessing a Server (Firebase) using Axios + Routing + Form Validation + advance redux + AUTHENTICATION + UNIT TEST (NavigationItems component, auth reducer)
