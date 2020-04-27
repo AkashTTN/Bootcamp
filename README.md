@@ -1,7 +1,7 @@
 #### Exercise   
 
 1. Installing node latest version and npm  
-2. Read file asynchronously and synchronously
+2. Read file asynchronously and synchronously  
    text file text.txt is read through code in index.js
 3. Install dependencies and dev dependencies  
    dependency - cors, dev-dependency - nodemon
