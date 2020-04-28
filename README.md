@@ -19,6 +19,6 @@ Home
 About  
 Contact us  
 On clicking on the items it will load the pages
-![]('./question3.png')
+![](./question3.png)
 
 
