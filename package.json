@@ -1,0 +1,25 @@
+{
+  "name": "rest-apis",
+  "version": "1.0.0",
+  "description": "1. Create a REST API for User entity with following fields:   Username   Password   FirstName   LastName   Create search bar which will search by user name and will create an autocomplete list of user which fulfil the criteria.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "users": "nodemon users.js",
+    "students": "nodemon students.js",
+    "server": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AkashTTN/Bootcamp.git"
+  },
+  "author": "Akash",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AkashTTN/Bootcamp/issues"
+  },
+  "homepage": "https://github.com/AkashTTN/Bootcamp#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  }
+}
