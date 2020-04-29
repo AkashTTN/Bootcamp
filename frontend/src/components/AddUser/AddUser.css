@@ -1,0 +1,10 @@
+.Form {
+    text-align: center;
+    margin: 10px;
+}
+
+.Form form {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}

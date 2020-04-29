@@ -1,0 +1,11 @@
+.User {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.User li > button {
+    padding: 10px;
+    font-weight: bold;
+}
