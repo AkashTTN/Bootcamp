@@ -30,6 +30,7 @@ const AddUser = () => {
         e.preventDefault();
         fetch('http://localhost:4000/users/', {
             method: 'POST',
+            credentials: 'include',
             headers: {
                 'Content-Type': 'application/json'
             },

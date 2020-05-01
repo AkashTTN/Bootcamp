@@ -13,8 +13,13 @@ function App() {
 
   let createUsers;
 
+  const onCreateSessionHandler = () => {
+    fetch('http://localhost:4000/session', { credentials: 'include' })
+      .then(res => res.headers)
+  }
+
   const fetchUsers = useCallback(() => {
-    fetch(BASE_URL)
+    fetch(BASE_URL, { credentials: 'include' })
       .then(res => res.json())
       .then(users => {
         createUsers(users);
@@ -54,6 +59,7 @@ function App() {
       {users}
       <Link to='/add-user' >ADD USER</Link>
       <Link to='/about' >ABOUT</Link>
+      <button onClick={onCreateSessionHandler}>Create Session</button>
     </div>
   );
 }
