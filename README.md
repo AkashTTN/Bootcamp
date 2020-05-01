@@ -1,10 +1,10 @@
 #### Exercise 
 
-For 1st and 3rd  
+For 1st
 Run server - cd server && npm run server  
 Run frontend - cd frontend && npm start
 
-For 2nd and 4th  
+For others  
 node index.js
 
 1. Create on custom middleware to validate the session of user if valid session allow to access request otherwise send back.  

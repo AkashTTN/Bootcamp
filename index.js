@@ -1,6 +1,7 @@
 const fs = require('fs')
 const zlib = require('zlib');
 const { exec, spawn, execFile } = require('child_process');
+const superagent = require('superagent');
 
 // Buffers
 console.log('--------Buffers Output------')
@@ -70,3 +71,21 @@ const secondChild = execFile('node', ['--version'], (error, stdout, stderr) => {
     }
     console.log(stdout);
 });
+
+
+// Using async/await for a hitting an API
+async function getGitHubUserData(username) {
+
+    try {
+        let response = await superagent.get(`https://api.github.com/users/${username}`).set('User-Agent', 'AkashTTN');
+        const userData = response.body;
+
+        console.log(`GitHub User ${username} data:`);
+        console.log(userData);
+    } catch {
+        console.log('Request Failed');
+    }
+    
+}
+
+getGitHubUserData('AkashTTN');

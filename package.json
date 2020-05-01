@@ -1,0 +1,23 @@
+{
+  "name": "Bootcamp",
+  "version": "1.0.0",
+  "description": "For 1st and 3rd   Run server - cd server && npm run server   Run frontend - cd frontend && npm start",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AkashTTN/Bootcamp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AkashTTN/Bootcamp/issues"
+  },
+  "homepage": "https://github.com/AkashTTN/Bootcamp#readme",
+  "dependencies": {
+    "superagent": "^5.2.2"
+  }
+}
