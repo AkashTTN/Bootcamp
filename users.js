@@ -13,7 +13,7 @@ const server = http.createServer((req, res) => {
     const { query, pathname } = url.parse(req.url, true);
     
     switch (pathname) {
-        case '/users':
+        case '/user':
             
             const usernameToSearch = query.username;
             const userData = users.find((userData) => userData.username === usernameToSearch)
@@ -35,6 +35,6 @@ const server = http.createServer((req, res) => {
     }
 })
 
-server.listen(3000, 'localhost', () => {
+server.listen(4000, 'localhost', () => {
     console.log('Server running')
 });

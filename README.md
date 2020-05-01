@@ -1,7 +1,6 @@
 #### Exercises  
 
 API made in 3rd are consumed in the React App  
-[Postman Collection Link](https://www.getpostman.com/collections/2a4c1d45d733bd90c648)  
 
 1. Create a REST API for User entity with following fields:  
 Username  
