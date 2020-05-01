@@ -5,7 +5,7 @@ module.exports = app => {
         res.send(getUsers());
     })
 
-    app.delete('/users/:username', (req, res) => {
+    app.delete('/user/:username', (req, res) => {
         const username = req.params.username;
         const status = deleteUser(username)
         
@@ -19,7 +19,7 @@ module.exports = app => {
         res.status(204).end();
     })
 
-    app.post('/users', (req, res) => {
+    app.post('/user', (req, res) => {
         addUser(req.body);
         res.status(200).end(JSON.stringify({
             action: 'USER ADDED',

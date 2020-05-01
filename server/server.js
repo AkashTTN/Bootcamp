@@ -10,10 +10,10 @@ const app = express();
 app.use(cors());
 
 // Middleware to parse request body
-app.use('/users', express.json())
+app.use('/user', express.json())
 
 // Middleware to add a field in the request body conditionally
-app.use('/users', (req, res, next) => {
+app.use('/user', (req, res, next) => {
     if (req.method === 'POST') {
         let newBodyData = { ...req.body };
         newBodyData['created_on'] = new Date();
