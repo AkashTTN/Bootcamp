@@ -7,7 +7,8 @@ Run frontend - cd frontend && npm start
 For 2nd and 4th  
 node index.js
 
-1. Create on custom middleware to validate the session of user if valid session allow to access request otherwise send back.
+1. Create on custom middleware to validate the session of user if valid session allow to access request otherwise send back.  
+APIs made in session 3 will now require a cookie/sessionid
 
 2. Create Example for Buffer, Streams and pipe.
 

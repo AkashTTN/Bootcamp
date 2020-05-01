@@ -1,10 +1,16 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useCallback } from 'react';
+import { useHistory } from 'react-router-dom';
 
 import './About.css';
 
 const About = () => {
 
     const [content, setContent] = useState(null);
+    const history = useHistory();
+
+    const onClickHandler = useCallback(() => {
+        history.push('/');
+    }, [history])
 
     useEffect(
         () => {
@@ -17,10 +23,12 @@ const About = () => {
         },
         []
     )
+
     return (
         <div className="About">
             <h1>About Me</h1>
             <p>{content}</p>
+            <button onClick={onClickHandler} >HOME</button>
         </div>
     )
 }

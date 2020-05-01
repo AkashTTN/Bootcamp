@@ -1,0 +1,12 @@
+.CreateSession {
+    text-align: center;
+}
+
+.CreateSession button {
+    padding: 10px;
+    font-weight: bold;
+}
+
+.CreateSession > p {
+    font-size: 16px;
+}

@@ -4,34 +4,45 @@ import { Link } from 'react-router-dom';
 import './App.css';
 
 import User from './components/User/User';
+import CreateSession from './components/CreateSession/CreateSession';
 
-const BASE_URL = 'http://localhost:4000/users/';
+const BASE_URL = 'http://localhost:4000';
 
 function App() {
 
   const [users, setUsers] = useState(null);
+  const [isAuth, setIsAuth] = useState(true);
 
   let createUsers;
 
-  const onCreateSessionHandler = () => {
-    fetch('http://localhost:4000/session', { credentials: 'include' })
-      .then(res => res.headers)
-  }
-
   const fetchUsers = useCallback(() => {
-    fetch(BASE_URL, { credentials: 'include' })
-      .then(res => res.json())
+    fetch(BASE_URL + '/users', { credentials: 'include' })
+      .then(res => {
+        if (res.status === 401) {
+          return Promise.reject({
+            status: res.status,
+            statusText: res.statusText
+          })
+        } else {
+          setIsAuth(true);
+          return res.json();
+        }
+      })
       .then(users => {
         createUsers(users);
       })
       .catch(err => {
-        console.log('Request Failed.')
+        if (err.status === 401) {
+          setIsAuth(false);
+        } else {
+          console.log('Request Failed.')
+        }
       })
   }, [createUsers])
 
   const onDeleteHandler = useCallback(username => {
     console.log(username);
-    fetch(BASE_URL + username, { method: 'DELETE' })
+    fetch(BASE_URL + '/user/' + username, { method: 'DELETE', credentials: 'include' })
       .then(res => {
         fetchUsers();
       })
@@ -51,15 +62,25 @@ function App() {
   }, [onDeleteHandler])
 
   useEffect(() => {
-    fetchUsers();
-  }, [fetchUsers])
+    console.log('[MOUNTED]');
+    if (isAuth) {
+      fetchUsers();
+    }
+  }, [isAuth, fetchUsers])
+
+  const links = (
+    <>
+      <Link to='/add-user' >ADD USER</Link>
+      <Link to='/about' >ABOUT</Link>
+    </>
+  );
 
   return (
     <div className="App">
       {users}
-      <Link to='/add-user' >ADD USER</Link>
-      <Link to='/about' >ABOUT</Link>
-      <button onClick={onCreateSessionHandler}>Create Session</button>
+      {
+        isAuth ? links : <CreateSession setAuth={(status) => setIsAuth(status)} />
+      }
     </div>
   );
 }

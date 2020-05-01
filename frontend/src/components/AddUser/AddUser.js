@@ -1,6 +1,6 @@
 import React, { useCallback, useState } from 'react';
 import './AddUser.css';
-import { Redirect } from 'react-router-dom';
+import { Redirect, useHistory } from 'react-router-dom';
 
 const AddUser = () => {
 
@@ -8,6 +8,15 @@ const AddUser = () => {
     const [name, setName] = useState('');
     const [success, setSuccess] = useState(false);
 
+    const history = useHistory();
+
+    const onClickHandler = useCallback(
+        () => {
+            history.push('/');
+        },
+        [history]
+    )
+    
     const setRedirect = () => {
         if(success) {
             return <Redirect to='/' />
@@ -28,7 +37,7 @@ const AddUser = () => {
 
     const onSubmitHandler = useCallback((e) => {
         e.preventDefault();
-        fetch('http://localhost:4000/users/', {
+        fetch('http://localhost:4000/user/', {
             method: 'POST',
             credentials: 'include',
             headers: {
@@ -53,6 +62,7 @@ const AddUser = () => {
                 <input type="text" placeholder="Name" value={name} onChange={(e) => onChangeHandler(e, 'name')} />
                 <button type="submit">SUBMIT</button>
             </form>
+            <button onClick={onClickHandler} >HOME</button>
         </div>
     )
 }
