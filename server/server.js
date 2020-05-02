@@ -1,7 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 const session = require('express-session');
-const cookieParser = require('cookie-parser')
+// const cookieParser = require('cookie-parser')
 
 const rootRouter = require('./router');
 const aboutRouter = require('./router/about');
@@ -13,7 +13,7 @@ const app = express();
 app.use(cors({ "origin": "http://localhost:3000", "credentials": true }));
 
 // Setting cookie parser middleware
-app.use(cookieParser())
+// app.use(cookieParser())
 
 // Middleware for adding sessions
 app.use('/session', session({
@@ -25,7 +25,7 @@ app.use('/session', session({
 
 // Check if request contains a session id to allow access to endpoints
 app.use((req, res, next) => {
-    if (req.cookies['connect.sid']) {
+    if (req.headers.cookie) {
         next()
     } else {
         return res.status(401).send('Unauthorized Request.');
