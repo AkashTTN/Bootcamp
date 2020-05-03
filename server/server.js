@@ -20,8 +20,8 @@ app.use('/session', session({
     secret: 'cat',
     resave: false,
     saveUninitialized: true,
-    cookie: { maxAge: 5000 * 60 }
-}), (req, res, next) => { res.send('Session Created for 5 mins') })
+    cookie: { maxAge: 1000 * 60 }
+}), (req, res, next) => { res.send('Session Created for 1 min') })
 
 // Check if request contains a session id to allow access to endpoints
 app.use((req, res, next) => {

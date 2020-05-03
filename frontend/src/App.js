@@ -68,8 +68,9 @@ function App() {
     }
   }, [isAuth, fetchUsers])
 
-  const links = (
+  const data = (
     <>
+      {users}
       <Link to='/add-user' >ADD USER</Link>
       <Link to='/about' >ABOUT</Link>
     </>
@@ -77,9 +78,8 @@ function App() {
 
   return (
     <div className="App">
-      {users}
       {
-        isAuth ? links : <CreateSession setAuth={(status) => setIsAuth(status)} />
+        isAuth ? data : <CreateSession setAuth={(status) => setIsAuth(status)} />
       }
     </div>
   );
