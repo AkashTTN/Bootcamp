@@ -1,4 +1,4 @@
-const users = require('./user.service');
+const users = require('./localUser.service');
 const bcrypt = require('bcrypt');
 
 module.exports.create = async (req, res) => {

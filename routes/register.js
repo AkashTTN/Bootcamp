@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const checkNotAuthenticated = require('../middlewares/CheckNotAuthenticated');
-const users = require('../models/user.controller'); 
+const users = require('../models/LocalUser/localUser.controller'); 
 
 router.get('/', checkNotAuthenticated, (req, res) => {
     res.render('register.ejs')

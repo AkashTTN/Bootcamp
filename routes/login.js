@@ -13,4 +13,14 @@ router.post('/', checkNotAuthenticated, passport.authenticate('local', {
     failureFlash: true
 }))
 
+router.get('/google', checkNotAuthenticated, passport.authenticate('google', {
+    scope: ['profile'],
+    failureRedirect: '/login',
+    failureFlash: true
+}))
+
+router.get('/google/redirect', passport.authenticate('google'), (req, res) => {
+    res.render('../views/index.ejs', { name: req.user.user.name })
+})
+
 module.exports = router

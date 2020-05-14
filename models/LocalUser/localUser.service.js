@@ -1,6 +1,6 @@
 const {
     UserModel
-} = require('./user.model');
+} = require('./localUser.model');
 
 // const mongoose = require('mongoose');
 
