@@ -24,4 +24,4 @@ b) CASE II
 Implement these cases as test functions. The user should choose which case to run.
 
 Output for 1st and 4th  
-![ss.png]()
+![](ss.png)
