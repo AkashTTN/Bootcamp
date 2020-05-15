@@ -5,7 +5,7 @@ import './App.css';
 
 import User from './components/User/User';
 
-const BASE_URL = 'http://localhost:4000/users/';
+const BASE_URL = 'http://localhost:4000';
 
 function App() {
 
@@ -14,7 +14,7 @@ function App() {
   let createUsers;
 
   const fetchUsers = useCallback(() => {
-    fetch(BASE_URL)
+    fetch(BASE_URL + '/users')
       .then(res => res.json())
       .then(users => {
         createUsers(users);
@@ -26,7 +26,7 @@ function App() {
 
   const onDeleteHandler = useCallback(username => {
     console.log(username);
-    fetch(BASE_URL + username, { method: 'DELETE' })
+    fetch(BASE_URL + '/user/' + username, { method: 'DELETE' })
       .then(res => {
         fetchUsers();
       })

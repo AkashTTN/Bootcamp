@@ -28,7 +28,7 @@ const AddUser = () => {
 
     const onSubmitHandler = useCallback((e) => {
         e.preventDefault();
-        fetch('http://localhost:4000/users/', {
+        fetch('http://localhost:4000/user/', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
