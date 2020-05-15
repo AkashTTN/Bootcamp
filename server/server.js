@@ -18,3 +18,5 @@ aboutRouter(app);
 app.listen(PORT, () => {
     console.log('Server running...');
 })
+
+module.exports = app;

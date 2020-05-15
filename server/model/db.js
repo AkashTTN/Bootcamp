@@ -5,7 +5,7 @@ let users = [
 ];
 
 function getUsers() {
-    return JSON.stringify(users);
+    return users;
 }
 
 const addUser = (userData) => {

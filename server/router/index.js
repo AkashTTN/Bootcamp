@@ -6,7 +6,7 @@ module.exports = app => {
     })
 
     app.delete('/user/:username', (req, res) => {
-        
+
         if (!req.params) {
             res.status(200).end({ message: 'Please specify a username.' })
         }
@@ -15,10 +15,10 @@ module.exports = app => {
         const status = deleteUser(username)
 
         if (status !== -1) {
-            res.status(200).end(JSON.stringify({
+            res.status(200).send({
                 action: 'USER DELETED',
                 userData: { username }
-            }))
+            })
         }
 
         res.status(204).end();
@@ -33,9 +33,9 @@ module.exports = app => {
 
     }, (req, res) => {
         addUser(req.body);
-        res.status(200).end(JSON.stringify({
+        res.status(200).send({
             action: 'USER ADDED',
             userData: req.body
-        }))
+        })
     })
 }
