@@ -1,6 +1,11 @@
 const { getUsers, deleteUser, addUser } = require('../model/db');
 
 module.exports = app => {
+
+    app.delete('/user', (req, res) => {
+        res.status(200).send({message: 'Username required.'});
+    })
+
     app.get('/users', (req, res) => {
         res.send(getUsers());
     })
